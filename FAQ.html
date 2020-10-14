@@ -16,7 +16,20 @@
 </style>
 
 <body>
+	<script>
 
+	function toggleElement(id)
+	{
+	    if(document.getElementById(id).style.display == 'none')
+	    {
+	        document.getElementById(id).style.display = '';
+	    }
+	    else
+	    {
+	        document.getElementById(id).style.display = 'none';
+	    }
+	}
+	</script>
 	<!-- this is the Navbar (yk the thing at the top) -->
 	<div class="top">
 		<div class="bar black card">
@@ -50,66 +63,38 @@
 
 
   <!-- The Member Section -->
-  <div class="black" id="tour">
+  <div class="red" id="tour">
     <div class="container content padding-64" style="max-width:800px">
       <h2 class="wide center" style="font-size:200px;font-size: 4vw; font-weight: bold;">Frequently Asked Questions</h2>
-      <p class="opacity center"><i></i></p><br>
 
-       <div class="row-padding padding-32" style="margin:0 -16px">
-        <div class="third margin-bottom">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.midlandsderm.com%2Fwp-content%2Fuploads%2F2019%2F04%2FRachel-R.-Person-760x760.jpg&f=1&nofb=1" alt="New York" style="width:100%" class="hover-opacity">
-          <div class="container white">
-            <p class="center"><b>Person A</b></p>
-            <p class="opacity center">Person A @ instagram</p>
-            <p class="center">Person A description (which i assume they write themselves)</p>
+    <p class="opacity center"><i></i></p><br>
 
-          </div>
-        </div>
-        <div class="third margin-bottom">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.midlandsderm.com%2Fwp-content%2Fuploads%2F2019%2F04%2FRachel-R.-Person-760x760.jpg&f=1&nofb=1" alt="Paris" style="width:100%" class="hover-opacity">
-          <div class="container white">
-            <p><b>Paris</b></p>
-            <p class="opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="button black margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="third margin-bottom">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.midlandsderm.com%2Fwp-content%2Fuploads%2F2019%2F04%2FRachel-R.-Person-760x760.jpg&f=1&nofb=1" alt="Paris" style="width:100%" class="hover-opacity">
-          <div class="container white">
-            <p><b>Paris</b></p>
-            <p class="opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="button black margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="third margin-bottom">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.midlandsderm.com%2Fwp-content%2Fuploads%2F2019%2F04%2FRachel-R.-Person-760x760.jpg&f=1&nofb=1" alt="Paris" style="width:100%" class="hover-opacity">
-          <div class="container white">
-            <p><b>Paris</b></p>
-            <p class="opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="button black margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="third margin-bottom">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.midlandsderm.com%2Fwp-content%2Fuploads%2F2019%2F04%2FRachel-R.-Person-760x760.jpg&f=1&nofb=1" alt="Paris" style="width:100%" class="hover-opacity">
-          <div class="container white">
-            <p><b>Paris</b></p>
-            <p class="opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="button black margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="third margin-bottom">
-          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.midlandsderm.com%2Fwp-content%2Fuploads%2F2019%2F04%2FRachel-R.-Person-760x760.jpg&f=1&nofb=1" alt="San Francisco" style="width:100%" class="hover-opacity">
-          <div class="container white">
-            <p><b>San Francisco</b></p>
-            <p class="opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="button black margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
+       <div class="container-padding padding-16" style="margin:0 -16px">
+				   <div class="display-container center">
+				 <!--div class="third margin-bottom"!-->
+
+           <div class="container white">
+             <p class="center" style="font-size:10px;font-size: 3vw; font-weight: 900;font-family: "Lato";"><b>QUESTION 1</b></p>
+             <p class="opacity center">Person A @ instagram</p>
+             <p class="center">Person A description (which i assume they write themselves)</p>
+
+           </div>
+         </div>
+				 <br>
+				 	<div class="display-container center">
+
+           <div class="container white">
+						 <p style="font-size:10px;font-size: 3vw; font-weight:900;">
+	 					 	<a href="javascript:toggleElement('a1')">WHAT DOES THE CDE DO?</a>
+	 					</p>
+	 				<div id="a1" style="display:none">
+	 				This is an answer.
+	 </div>
+
+           </div>
+         </div>
+				 </div>
+			 </div>
       </div>
     </div>
   </div>
@@ -145,7 +130,7 @@
 </div>
 
 <!-- Image of location/map -->
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lifeprint.com%2Fasl101%2Fsignjpegs%2Fs%2Fsmall-very-small-3.jpg&f=1&nofb=1" class="image greyscale-min" style="width:100%">
+<img src="https://i.redd.it/30939fofmvi41.jpg" class="image greyscale-min" style="width:100%">
 
 <!-- This is the footer, yk, where all the site structure is listed.-->
 <footer class="container padding-64 center opacity light-grey xlarge">
